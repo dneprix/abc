@@ -94,7 +94,6 @@ class Matrix
 
         // Print attempts
         echo "Attempts: {$this->attempts} \n";
-
     }
 
     /***
@@ -134,7 +133,7 @@ class Matrix
     }
 
     /**
-     * Method  position
+     * Set position primary and secondary values
      * @param $position
      */
     private function setPosition($position): void
@@ -157,6 +156,8 @@ class Matrix
 
 
     /**
+     * Set secondary position value
+     *
      * @param $position
      */
     private function setSecondaryPosition($position): void
