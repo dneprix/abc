@@ -160,7 +160,7 @@ class Matrix
      *
      * @param $position
      */
-    private function setSecondaryPosition($position): void
+    private function setSecondaryPosition(iterable $position): void
     {
         [$x, $y] = $position;
 
