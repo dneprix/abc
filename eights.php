@@ -40,7 +40,7 @@ class Matrix
      * @param $m - matrix columns number
      * @param $k - matrix primary values number
      */
-    public function __construct($n, $m, $k)
+    public function __construct(int $n, int $m, int $k)
     {
         // Set matrix settings
         $this->n = $n;
@@ -115,7 +115,7 @@ class Matrix
      * @param $position
      * @return bool
      */
-    private function isValidPosition($position): bool
+    private function isValidPosition(iterable $position): bool
     {
         return !$this->getPositionValue($position) ? true : false;
     }
@@ -126,7 +126,7 @@ class Matrix
      * @param $position
      * @return int
      */
-    private function getPositionValue($position): int
+    private function getPositionValue(iterable $position): int
     {
         [$x, $y] = $position;
         return !empty($this->data[$x][$y]) ? $this->data[$x][$y] : 0;
@@ -136,7 +136,7 @@ class Matrix
      * Set position primary and secondary values
      * @param $position
      */
-    private function setPosition($position): void
+    private function setPosition(iterable $position): void
     {
         [$x, $y] = $position;
 
